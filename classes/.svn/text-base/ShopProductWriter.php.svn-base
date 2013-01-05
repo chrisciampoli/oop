@@ -1,0 +1,12 @@
+<?php
+class ShopProductWriter {
+	
+	public function write($shopProduct){
+		$str = "{$shopProduct->title}: ";
+		$str .= $shopProduct->getProducer();
+		$str .= " ({$shopProduct->price})\n";
+		print $str;
+	}
+	
+}
+?>
